@@ -112,12 +112,11 @@ var KEY="pemeriksaan-kapal-v1",INTERVAL=90;
 function daysAgo(n){var d=new Date();d.setDate(d.getDate()-n);return d.toISOString().slice(0,10)}
 function mk(id,nama,tipe,ago,fails,cat){return{id:id,nama:nama,tipe:tipe,tgl:daysAgo(ago),fails:fails,cat:cat||""}}
 function sample(){return[
- mk(1,"KN Contoh 01","Patroli BC 15001",20,[],"Pemeriksaan rutin, tidak ada temuan."),
- mk(2,"KN Contoh 02","Patroli BC 15002",45,["t2","d3"],"AIS perlu kalibrasi, buku log belum lengkap."),
- mk(3,"KN Contoh 03","Patroli BC 20001",70,["m3","l2","t3"],"Jadwalkan penggantian filter bahan bakar."),
- mk(4,"KN Contoh 04","Patroli BC 20002",100,["k2","m4"],"Pemadam kedaluwarsa, pompa bilge macet."),
- mk(5,"KN Contoh 05","Speedboat BC 10001",12,["n2"],"Echosounder pembacaan tidak stabil."),
- mk(6,"KN Contoh 06","Speedboat BC 10002",30,[],"")
+ mk(1,"BC 30004","Patroli BC 30004",20,[],"Pemeriksaan rutin, tidak ada temuan."),
+ mk(2,"BC 20007","Patroli BC 20007",45,["t2","d3"],"AIS perlu kalibrasi, buku log belum lengkap."),
+ mk(3,"BC 20006","Patroli BC 20006",70,["m3","l2","t3"],"Jadwalkan penggantian filter bahan bakar."),
+ mk(4,"BC 70005","Patroli BC 7005",100,["k2","m4"],"Pemadam kedaluwarsa, pompa bilge macet."),
+ mk(5,"BC 15027","Speedboat BC 150027",12,["n2"],"Echosounder pembacaan tidak stabil."),
 ]}
 var S={v:load(),sel:null,flt:"semua",q:"",edit:false};
 function load(){try{var r=localStorage.getItem(KEY);if(r){var a=JSON.parse(r);if(a&&a.length)return a}}catch(e){}return sample()}
