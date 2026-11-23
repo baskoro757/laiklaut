@@ -6,6 +6,9 @@
 <title>Dashboard Pemeriksaan Kapal</title>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+theme: jekyll-theme-minimal
+title: Octocat's homepage
+description: Bookmark this to keep an eye on my project updates!
 :root{--bg:#eef2f1;--sf:#fff;--ink:#10282c;--mut:#5b7074;--ln:#d3dedd;--ac:#0f5c63;--ok:#1f7a4d;--wr:#a86a0c;--bad:#b3372f;--okb:#e2f3ea;--wrb:#fbefd8;--badb:#f8e2e0;color-scheme:light}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a1c;--sf:#142427;--ink:#e3eeee;--mut:#93aaad;--ln:#26403f;--ac:#5cc4cc;--ok:#5fd394;--wr:#efb44c;--bad:#f08a82;--okb:#14352a;--wrb:#3a2d10;--badb:#3d1a18;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#0d1a1c;--sf:#142427;--ink:#e3eeee;--mut:#93aaad;--ln:#26403f;--ac:#5cc4cc;--ok:#5fd394;--wr:#efb44c;--bad:#f08a82;--okb:#14352a;--wrb:#3a2d10;--badb:#3d1a18;color-scheme:dark}
